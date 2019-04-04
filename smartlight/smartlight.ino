@@ -12,25 +12,25 @@ void loop() {
   int sensorValue = analogRead(A0);
   Serial.println(sensorValue);
   delay(100);
-  if (sensorValue <= 350) {
+  if (sensorValue <= 300) {
     digitalWrite(13, HIGH);
   }
   else {
     digitalWrite(13, LOW);
   }
-  if (sensorValue <= 300) {
+  if (sensorValue <= 250) {
     digitalWrite(12, HIGH);
   }
   else {
     digitalWrite(12, LOW);
   }
-  if (sensorValue <= 250) {
+  if (sensorValue <= 200) {
     digitalWrite(11, HIGH);
   }
   else {
     digitalWrite(11, LOW);
   }
-  if (sensorValue <= 200) {
+  if (sensorValue <= 150) {
     digitalWrite(10, HIGH);
   }
   else {
